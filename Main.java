@@ -1,7 +1,15 @@
 class NetworkDevice{
-    String ipAddress;
     String deviceName;
+    String ipAddress;
     boolean isOnline;
+
+    void ping(){
+        //code
+    }
+
+    void displayInfo(){
+        System.out.println("Device: " + deviceName + "\nIP Address: " + ipAddress + "\nOnline: " + isOnline));
+    }
 }
 
 
