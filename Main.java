@@ -26,6 +26,11 @@ class NetworkDevice {
         System.out.println(deviceName + " pinged. Status: " + isOnline);
     }
 
+    void access(String f){
+        //f = file
+        System.out.println("File " + "\"" + f + "\" accessed by device \"" + deviceName + "\".")
+    }
+
     void displayInfo() {
         System.out.println("Device Name: " + deviceName + "\nIP Address: " + ipAddress + "\nOnline: " + isOnline);
     }
@@ -46,6 +51,12 @@ class NetworkDevice {
         @Override
         void ping() {
             System.out.println(deviceName + " pinged. Result: BLOCKED BY FIREWALL.");
+        }
+
+        @Override
+        void access(String f){
+            //f = device name
+            System.out.println();
         }
     }
 
