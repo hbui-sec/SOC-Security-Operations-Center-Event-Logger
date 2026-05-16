@@ -55,7 +55,7 @@ class NetworkDevice {
 
         @Override
         void access(String f){
-            //f = device name
+            System.out.println(f + " access revoked.");
             System.out.println();
         }
     }
